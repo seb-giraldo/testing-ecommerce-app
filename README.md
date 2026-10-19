@@ -100,6 +100,19 @@ npm test -- --watch  # Run Vitest in watch mode
 npm run test:e2e      # Run Playwright E2E tests
 ```
 
+## Test Suites
+
+### Unit & Component Tests (7 tests)
+- **ProductCard** (2 tests) — Renders product name/price and handles add-to-cart callback
+- **DiscountCodeForm** (3 tests) — Validates user input, handles discount code application, and displays success/error messages
+- **Header** (2 tests) — Displays correct cart item count for both empty and populated cart
+
+### E2E Tests (14 tests)
+- **Browsing & Cart Management** (9 tests) — Product discovery, quantity adjustments, cart math, and discount code validation
+- **Checkout & Confirmation** (5 tests) — Route guards, shipping selection (domestic/international), and full purchase journey from product to order confirmation
+
+**Total: 21 tests**
+
 ## Testing Patterns
 
 ### Unit/Component Tests with Vitest + React Testing Library
